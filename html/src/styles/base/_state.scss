@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.hidden {
+  display: none;
+}
+
+.fullscreen {
+  min-height: 100lvh;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bg {
+  background-color: $color--bg;
+}

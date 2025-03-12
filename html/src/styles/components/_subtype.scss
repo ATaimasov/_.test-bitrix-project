@@ -1,0 +1,26 @@
+@use "../global" as *;
+
+.subtype {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+  width: 100%;
+  padding: rem(5px) rem(10px);
+  border-radius: rem(10px);
+  background-color: $color--bg-light;
+}
+
+.subtype__img {
+  border-radius: rem(2px);
+}
+
+.subtype__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subtype__img-container {
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
+}

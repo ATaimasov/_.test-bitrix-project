@@ -1,0 +1,59 @@
+@use "../global" as *;
+
+.material {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: rem(384px);
+  }
+
+  &:nth-child(odd):last-child {
+    justify-self: center;
+
+    @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+      grid-column: span 2;
+    }
+  }
+}
+
+.material__img {
+  width: 100%;
+  height: rem(170px);
+  border-radius: rem(10px);
+  object-fit: cover;
+}
+
+.material__img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.material__title {
+  max-width: rem(200px);
+  font-size: $font-size--h2;
+  font-weight: $font-weight--h2;
+  line-height: $line-height--h2;
+}
+
+.material__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.material__subtitle {
+  font-weight: $font-weight--subtitle;
+}
+
+.material__item {
+  &::before {
+    content: "•";
+    margin-right: rem(10px);
+  }
+}

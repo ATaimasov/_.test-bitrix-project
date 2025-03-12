@@ -1,0 +1,58 @@
+@use "../global" as *;
+
+.wood {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  width: 100%;
+  padding: rem(30px);
+  border-radius: rem(10px);
+  background-color: $color--bg-light;
+  box-shadow: 0 0 rem(40px) rem(1px) $color--shadow;
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: rem(558px);
+  }
+
+  &:nth-child(odd):last-child {
+    justify-self: center;
+
+    @media screen and (min-width: $screen-lg) {
+      grid-column: span 2;
+    }
+  }
+}
+
+.wood__img-container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+}
+
+.wood__title {
+  font-size: $font-size--h2;
+  font-weight: $font-weight--h2;
+  line-height: $line-height--h2;
+}
+
+.wood__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30px);
+  width: 100%;
+}
+
+.wood__subtitle {
+  &::after {
+    content: "";
+    display: block;
+  }
+}
+
+.wood__link {
+  margin: auto auto 0 0;
+  padding: rem(16px) rem(32px);
+  border-radius: rem(8px);
+  background-color: $color--btn;
+  color: $color--text-color;
+}

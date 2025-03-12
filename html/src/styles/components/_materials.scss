@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+@use "./material" as *;
+
+.section:has(.materials) {
+  padding-top: rem(40px);
+  padding-bottom: rem(40px);
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: rem(80px);
+    padding-bottom: rem(80px);
+  }
+}
+
+.materials {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(30px);
+  max-width: rem(1200px);
+  width: 100%;
+
+  @media screen and (min-width: $screen-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(24px);
+  }
+}

@@ -1,0 +1,32 @@
+@use "../global" as *;
+@use "./type" as *;
+
+.section:has(.types) {
+  padding-top: rem(60px);
+  padding-bottom: rem(22.5px);
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: rem(120px);
+    padding-bottom: rem(45px);
+  }
+}
+
+.types {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: rem(24px);
+  row-gap: rem(30px);
+  max-width: rem(1200px);
+  width: 100%;
+  background-color: $color--bg;
+
+  @media screen and (min-width: $screen-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: rem(60px);
+  }
+}

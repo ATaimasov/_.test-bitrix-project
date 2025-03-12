@@ -1,0 +1,26 @@
+@use "../global" as *;
+@use "./wood";
+
+.section:has(.woods) {
+  padding-top: rem(30px);
+  padding-bottom: rem(60px);
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: rem(60px);
+    padding-bottom: rem(120px);
+  }
+}
+
+.woods {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
+  gap: rem(24px);
+  max-width: rem(1200px);
+  width: 100%;
+
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

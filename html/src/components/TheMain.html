@@ -1,0 +1,10 @@
+<div class="main__container">
+  @@if(context.main) {
+    @@include('./_test.html', {})
+  }
+  @@if(context.about) {
+    @@include('./_woods.html', {})
+    @@include('./_materials.html', {})
+    @@include('./_types.html', {})
+  }
+</div>

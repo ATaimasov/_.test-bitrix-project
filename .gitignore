@@ -1,7 +1,7 @@
 node_modules/
 dist/
 build/
-bitrix/
+WPNEW/bitrix
 
 *.log
 .DS_Store
