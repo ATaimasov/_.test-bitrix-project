@@ -13,7 +13,11 @@
     <header class="header">
       @@include('./components/TheHeader.html', { "class": 'header' })
     </header>
-    <main class="main">@@include('./components/TheMain.html', {})</main>
+    <main class="main">
+      @@include('./components/TheMain.html', {
+        "main": true,
+      })
+    </main>
     <footer class="footer">
       @@include('./components/TheFooter.html', {})
     </footer>

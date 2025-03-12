@@ -1,8 +1,8 @@
 <div class="main__container">
-  @@if(context.main) {
+  @@if(context.main === true) {
     @@include('./_test.html', {})
   }
-  @@if(context.about) {
+  @@if(context.about === true) {
     @@include('./_woods.html', {})
     @@include('./_materials.html', {})
     @@include('./_types.html', {})

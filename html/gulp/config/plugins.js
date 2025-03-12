@@ -25,9 +25,9 @@ export const plugins = {
       prefix: "@@",
       basepath: "@file",
       context: {
-        main: true,
-        about: true,
-      }
+        main: false,
+        about: false,
+      },
     },
   },
 };
