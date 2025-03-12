@@ -6,13 +6,17 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 
 $APPLICATION->SetTitle("404 Not Found");
 ?>
-<h1 class="test__title"><?= $APPLICATION->ShowTitle(); ?></h1>
-<p class="test__text">
-    Извините, запрашиваемой страницы не существует или она перенесена в другой раздел.
-</p>
-<button class="btn page__404-btn">
-    <a href="/" class="link page__404-link">Вернуться на главную</a>
-</button>
+<section class="section">
+    <div class="section__container">
+        <h1 class="section__title"><?= $APPLICATION->ShowTitle(); ?></h1>
+        <p>
+            Извините, запрашиваемой страницы не существует или она перенесена в другой раздел.
+        </p>
+        <button class="btn page__404-btn">
+            <a href="/" class="link page__404-link">Вернуться на главную</a>
+        </button>
+    </div>
+</section>
 
 
 <?

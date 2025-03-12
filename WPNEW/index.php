@@ -3,9 +3,13 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Главная страница");
 ?>
 
-<h1 class="test__title">Тестовое задание</h1>
-<p class="test__text">
-    Перейти к <a href="/task-3" class="link">заданию 3</a>
-</p>
+<section class="section">
+    <div class="section__container">
+        <h1 class="section__title">Тестовое задание</h1>
+        <p>
+            Перейти к <a href="/task-3" class="link">заданию 3</a>
+        </p>
+    </div>
+</section>
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

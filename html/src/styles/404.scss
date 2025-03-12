@@ -1,14 +1,15 @@
+@use "./global" as *;
+
 .page__404-btn {
   padding: 1rem 1.25rem;
   margin-top: 10px;
   max-width: 300px;
   font-size: 1rem;
-  color: #ffffff;
-  background-color: transparent;
+  background-color: $color--btn;
   border: none;
   border-radius: 8px;
 }
 
 .page__404-link {
-  color: inherit;
+  color: $color--btn-text;
 }
