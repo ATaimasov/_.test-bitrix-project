@@ -4,6 +4,7 @@
 // components for all pages
 @use "components/UI/copyrights";
 @use "components/nav";
+@use "components/404" as *;
 
 // styles for scripts and animations
 @use "base/state";

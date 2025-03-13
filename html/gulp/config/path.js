@@ -17,7 +17,7 @@ export const path = {
   },
   src: {
     js: `${srcFolder}/scripts/*.js`,
-    html: `${srcFolder}/**/*.html`,
+    html: `${srcFolder}/*.html`,
     scss: `${srcFolder}/styles/*.scss`,
     favicons: `${srcFolder}/assets/favicons/*.*`,
     fonts: `${srcFolder}/assets/fonts/**/*.*`,
